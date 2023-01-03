@@ -1,7 +1,8 @@
 
   :root {
     --font-type: Futura,  Arial, sans-serif;
-
+    --blue: #2149fe;
+    --white: #fff;
   }
   body {
     margin: 2em;
@@ -62,10 +63,41 @@
   .volunteer  {
     padding-left: 3rem;
     color: white;
-    font-size: 90px;
+    font-size: 80px;
     margin-bottom: 2rem;
   }
 
   .volunteer-info  {
-    padding-left: 3rem;font-size: 32px;
+    padding-left: 3rem;
+    font-size: 32px;
+  }
+
+ .start-button {
+    color: var(--white);
+    position: absolute;
+    height: 7%;
+    width: 10%;
+    border-radius: 1rem;
+    border: none;
+    left: 6rem;
+    bottom: 12rem;
+    background-color: var(--blue);
+  }
+
+  .store {
+    position: absolute;
+    height: 6%;
+    width: 9%;
+    border: none;
+    bottom: 4rem;
+    background-color: transparent;
+  }
+ .app-store {
+    left: 6rem;
+  }
+  .play-store {
+    left: 19rem;
+  }
+   .huawei-gallery {
+    left: 32rem;
   }
