@@ -123,7 +123,7 @@
     border-radius: 1rem;
   }
   
-  .new-bullet {
+  .green-vertical {
     border-radius: 1rem;
     margin-top: 2rem;
     margin-right:2rem;
@@ -131,14 +131,25 @@
   }
   
   .features-container {
-    border: #fff;
+    border: blue;
     background-color: var(--white);
     width: 60%;
-    margin-left:8rem;
+    margin-left:6rem;
   }
 
   .features-title {
     display: flex;
     padding-bottom: 2rem;
     justify-content: flex-start;
+    margin-left:1rem;
+  }
+
+   .feature {
+    margin:1rem;
+  }
+
+  .blue-horizontal{
+    margin-top:2rem;
+    border-top:0.45rem blue solid;
+    width: 25%;
   }
