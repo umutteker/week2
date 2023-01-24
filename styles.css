@@ -51,6 +51,16 @@
     margin-top: 0.2rem;
   }
 
+  .home-page-container{
+    background-size: contain;
+    width: 100%;
+    
+    margin-bottom:23rem;
+    margin-left:0;
+    margin-right:0;
+    border-radius: 16px;
+  }
+
   .background-image{
     background-image: url('image/background.png');
     background-size: 100%;
@@ -118,38 +128,102 @@
     left: 32rem;
   }
 
-  .menu-background {
-    background-color: var(--light-grey);
-    border-radius: 1rem;
-  }
-  
-  .green-vertical {
-    border-radius: 1rem;
-    margin-top: 2rem;
-    margin-right:2rem;
-    border:var(--green) solid 10px;
-  }
-  
   .features-container {
-    border: blue;
+    border: #fff;
+    margin-bottom: 6rem;
+    line-height: 32px;
+    border-radius: 0.4rem;
     background-color: var(--white);
-    width: 60%;
-    margin-left:6rem;
+    padding-bottom: 6rem;
+    width: 80%;
   }
-
   .features-title {
     display: flex;
     padding-bottom: 2rem;
     justify-content: flex-start;
-    margin-left:1rem;
+    margin-top:-20rem;
+  }
+  .features-title > img {
+    height: 3rem;
   }
 
-   .feature {
-    margin:1rem;
+  .menu-background {
+    background-color: var(--light-grey);
+    border-radius: 1rem;
+  }
+  .green-vertical {
+    border-radius: 1rem;
+    margin-top: 2rem;
+    margin-right:2rem;
+    height: 4rem;
+    border:var(--green) solid 10px;
+  }
+  .feature > img {
+    margin-top: 1rem;
+    width: 40%;
   }
 
   .blue-horizontal{
-    margin-top:2rem;
+    margin-top:2.2rem;
     border-top:0.45rem blue solid;
     width: 25%;
+  }
+  
+  .features-container > .features-container-spec{
+    margin-top:-10rem;
+  }
+
+
+/* Second Container */
+  .second-feature-container {
+    margin-bottom: 6rem;
+    width: 80%;
+    line-height: 36px;
+    border-radius: 0.4rem;
+    background-color: var(--white);
+  }
+
+  .features-second-row {
+    margin:2rem;
+    width: 80%;
+  } 
+  .features-second-row > img {
+    margin-top: 1rem;
+    width: 40%;
+  }
+
+  .features-second-row > h4 {
+    margin-top: 3rem;
+  }
+  .features-second-row > p {
+    margin-top: 1.2rem;
+  }
+
+
+/* workflow Container */
+  .workflow-title {
+    display:flex;
+    margin-left:9rem;
+    margin-bottom: 4rem;
+  } 
+   
+  .workflow-image {
+    margin-bottom: 4rem;
+  }
+  
+  .workflow-image > img {
+    width: 80%;
+    padding-left: 6rem;
+  }
+  
+  .workflow-green-vertical{
+    border-radius:4px;
+    margin-right:16px;
+    border:8px var(--green) solid;
+    height: 48px;
+    margin-top: 1rem;
+  }
+
+  .border-green-vertical{
+    border-left: 6px #53b453 solid;
   }
