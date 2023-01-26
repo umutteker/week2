@@ -84,8 +84,8 @@
     </section>
 
     <section class="menu-background">
-        <section>
-            <div class="container features-container">
+        <section class="container">
+            <div class="features-container">
                 <div class="row">
                     <div class="features-title">
                         <div class="green-vertical"></div>
@@ -94,9 +94,11 @@
                 </div>
                 <div class="row features-container-spec">
                     <div class="col-sm">
-                        <div class="feature">
-                            <img src="image/sameday.svg" alt="sameday-icon" />
-                            <h4>Get Same-Day Delivery</h4>
+                        <div class="features-row">
+                            <div class="title-spec">
+                                <img src="image/sameday.svg" alt="sameday-icon" />
+                                <h4>Get Same-Day Delivery</h4>
+                            </div>
                             <div class="blue-horizontal"></div>
                             <p>
                                 Same-Day Delivery: Order for delivery from local supermarkets.
@@ -104,9 +106,11 @@
                         </div>
                     </div>
                     <div class="col-sm">
-                        <div class="feature">
-                            <img src="image/savetime.svg" alt="saveTime-icon" />
-                            <h4>Save Time & Effort</h4>
+                        <div class="features-row">
+                            <div class="title-spec">
+                                <img src="image/savetime.svg" alt="saveTime-icon" />
+                                <h4>Save Time & Effort</h4>
+                            </div>
                             <div class="blue-horizontal"></div>
                             <p>
                                 Make your purchase from the comfort of your own home and receive
@@ -115,9 +119,11 @@
                         </div>
                     </div>
                     <div class="col-sm">
-                        <div class="feature">
-                            <img src="image/appAndws.svg" alt="application-website-icon" />
-                            <h4>Mobile App and Website</h4>
+                        <div class="features-row">
+                            <div class="title-spec">
+                                <img src="image/appAndws.svg" alt="application-website-icon" />
+                                <h4>Mobile App and Website</h4>
+                            </div>
                             <div class="blue-horizontal"></div>
                             <p>
                                 Mobile App and Website: A secure mobile app and desktop app offers
@@ -128,12 +134,16 @@
                 </div>
             </div>
 
-            <div class="container second-feature-container">
+            <div class="features-container">
                 <div class="row">
                     <div class="col-sm">
-                        <div class="features-second-row">
-                            <img src="image/calendar.svg" alt="calendar-icon" />
-                            <h4>Choosing Delivery Date and Time</h4>
+                        <div class="features-row">
+                            <div class="title-spec">
+                                <div class="title-spec">
+                                    <img src="image/calendar.svg" alt="calendar-icon" />
+                                    <h4>Choosing Delivery Date and Time</h4>
+                                </div>
+                            </div>
                             <div class="blue-horizontal"></div>
                             <p>
                                 Receive your order on the day and within the time range of your
@@ -142,9 +152,11 @@
                         </div>
                     </div>
                     <div class="col-sm">
-                        <div class="features-second-row">
-                            <img src="image/tracking.svg" alt="order-status-icon" />
-                            <h4 class="order-status-title">Order Status Tracking</h4>
+                        <div class="features-row">
+                            <div class="title-spec">
+                                <img src="image/tracking.svg" alt="order-status-icon" />
+                                <h4 class="order-status-title">Order Status Tracking</h4>
+                            </div>
                             <div class="blue-horizontal"></div>
                             <p>
                                 Get the items you love delivered or ready for pickup in as
@@ -153,9 +165,11 @@
                         </div>
                     </div>
                     <div class="col-sm">
-                        <div class="features-second-row">
-                            <img src="image/volunteer.svg" alt="volunteer-icon" />
-                            <h4>Everybody Can Become a Volunteer</h4>
+                        <div class="features-row">
+                            <div class="title-spec">
+                                <img src="image/volunteer.svg" alt="volunteer-icon" />
+                                <h4>Everybody Can Become a Volunteer</h4>
+                            </div>
                             <div class="blue-horizontal"></div>
                             <p>
                                 Everyone can volunteer in their spare time to help the
@@ -167,7 +181,7 @@
             </div>
         </section>
 
-        <section id="workflow">
+        <section class="container" id="workflow">
             <div class="workflow-title">
                 <div class="workflow-green-vertical"></div>
                 <h2>Workflow</h2>
@@ -175,23 +189,27 @@
             <div class="workflow-image">
                 <img src="image/workflow_pic.png" />
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm mb-3 border-green-vertical">
+            <div class="flex-row">
+                <div class="col-sm mb-3 border-green-vertical">
+                    <div>
                         <h4>Registered Volunteers</h4>
                         <p>
                             You can be a volunteer on Quicki easily. Volunteers can register
                             to Quicki to start carrying deliveries as registered volunteer.
                         </p>
                     </div>
-                    <div class="col-sm mb-3 border-green-vertical">
+                </div>
+                <div class="col-sm mb-3 border-green-vertical">
+                    <div>
                         <h4>Order Fast & Easy</h4>
                         <p>
                             Order all your requests fast and easy by monitoring all your
                             orders in detail.
                         </p>
                     </div>
-                    <div class="col-sm mb-3 border-green-vertical">
+                </div>
+                <div class="col-sm mb-3 border-green-vertical">
+                    <div>
                         <h4>User-friendly Design</h4>
                         <p>
                             The user-friendly design facilitates the ordering process.
@@ -201,6 +219,94 @@
             </div>
         </section>
     </section>
+
+
+    <section id="application">
+        <div class="application-background">
+            <div class="application-title-container">
+                <div class="row">
+                    <div class="green-vertical application-mt"></div>
+                    <h2 class="application-title">Application</h2>
+                </div>
+            </div>
+            <div class="application-container">
+                <div class="row">
+                    <div class="col application-image">
+                        <img src="image/quicki_app.png" />
+                    </div>
+                    <div class="col application-content">
+                        <div class="row">
+                            <div class="col-sm application-mobile">
+                                <img src="image/mobile_ui.svg" />
+                                <h4>Mobile</h4>
+                            </div>
+                            <div class="col-sm application-desktop">
+                                <img src="image/desktop_ui.svg" />
+                                <h4>Desktop</h4>
+                            </div>
+                        </div>
+                        <h4>Customers</h4>
+                        <div class="flex-row">
+                            <div class="left-blue-vertical"></div>
+                            <div class="application-customers">
+                                <h5>Order Status Tracking for Customers</h5>
+                                <p>
+                                    Get the items you love delivered in as little as 2 hours. Get
+                                    a confirmation as soon as a volunteer has accepted your order.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex-row">
+                            <div class="left-blue-vertical"></div>
+                            <div class="application-customers">
+                                <h5>Choosing Delivery Date and Time</h5>
+                                <p>
+                                    Receive your order on the day and within the time range of
+                                    your choice.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex-row">
+                            <div class="left-blue-vertical"></div>
+                            <div class="application-customers">
+                                <h5>Easy to Repeat Order</h5>
+                                <p>
+                                    View all your orders in detail and quickly repeat your order
+                                    from the last order using the order area in your profile.
+                                </p>
+                            </div>
+                        </div>
+
+                        <h4 class="margin-t2">Volunteers</h4>
+                        <div class="flex-row">
+                            <div class="left-blue-vertical"></div>
+                            <div class="application-customers">
+                                <h5>Easy Registration for Volunteers</h5>
+                                <p>
+                                    You can easily become a volunteer on Quicki. Volunteers can
+                                    register on Quicki to carry deliveries as a registered
+                                    volunteer.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex-row margin-t2">
+                            <div class="left-blue-vertical"></div>
+                            <div class="application-customers">
+                                <h5>Management Panel for Volunteers</h5>
+                                <p>
+                                    Usability management panel for volunteers. Every volunteer can
+                                    easily manage the status of all their orders.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
 </body>
 

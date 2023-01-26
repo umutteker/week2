@@ -1,33 +1,53 @@
-
   :root {
-    --font-type: Futura,  Arial, sans-serif;
+    --font-type: Futura, Arial, sans-serif;
     --blue: #2149fe;
     --white: #fff;
     --green: #8cc27b;
     --light-grey: #f4f4f4;
+    --light-blue: #81cffa;
+    --orange: #d95214;
   }
+
   body {
     margin: 2em;
   }
+
   h2 {
     color: var(--blue);
     font-size: 4rem;
     font-weight: 700;
   }
 
-.navbar {
+  .flex-row {
+    display: flex;
+  }
+
+  .navbar {
     font-family: var(--font-type);
     font-size: 20px;
     line-height: 34px;
   }
+
   .navbar-logo {
     width: 12rem;
     margin-top: -1rem;
   }
-  
+
   .header-nav {
     color: black;
     margin-left: 2.5rem;
+  }
+
+  .title-spec {
+    min-height: 250px;
+  }
+
+  .title-spec>img {
+    min-height: 180px;
+  }
+
+  .title-spec>h4 {
+    margin-top: 1rem;
   }
 
   .login-btn {
@@ -36,12 +56,13 @@
     font-family: var(--font-type);
     font-size: 12px;
     padding-left: 1rem;
-    width: 10rem; /*max or min width?*/
+    width: 10rem;
+    /*max or min width?*/
     margin-left: 1rem;
     border-color: #2149fe;
   }
-  
-  .login-btn > img {
+
+  .login-btn>img {
     margin-right: 0.3rem;
   }
 
@@ -51,49 +72,48 @@
     margin-top: 0.2rem;
   }
 
-  .home-page-container{
+  .home-page-container {
     background-size: contain;
     width: 100%;
-    
-    margin-bottom:23rem;
-    margin-left:0;
-    margin-right:0;
+    margin-bottom: 23rem;
+    margin-left: 0;
+    margin-right: 0;
     border-radius: 16px;
   }
 
-  .background-image{
+  .background-image {
     background-image: url('image/background.png');
     background-size: 100%;
     background-repeat: no-repeat;
-    background-position: center;
     width: 95vw;
     height: 100vh;
   }
 
-  .same-day  {
+  .same-day {
+    margin: 2rem;
     padding-top: 3rem;
     padding-left: 3rem;
 
   }
 
-  .volunteer  {
+  .volunteer {
     padding-left: 3rem;
     color: white;
     font-size: 80px;
     margin-bottom: 2rem;
   }
 
-  .volunteer-info  {
+  .volunteer-info {
     padding-left: 3rem;
-    font-size: 32px;
-  }
- 
-  .start-button {
-    margin-left:4rem;
-    margin-top:4rem;
+    font-size: 24px;
   }
 
- .start-button > button{
+  .start-button {
+    margin-left: 4rem;
+    margin-top: 4rem;
+  }
+
+  .start-button>button {
     color: var(--white);
     position: absolute;
     height: 7%;
@@ -101,13 +121,12 @@
     border-radius: 1rem;
     border: none;
     left: 6rem;
-    bottom: 12rem;
+    bottom: 10rem;
     background-color: var(--blue);
   }
 
   .stores {
-    margin-left:4rem;
-    margin-top:8rem;
+    margin-left: 4rem;
   }
 
   .store {
@@ -118,32 +137,36 @@
     bottom: 4rem;
     background-color: transparent;
   }
- .app-store {
+
+  .app-store {
     left: 6rem;
   }
+
   .play-store {
     left: 19rem;
   }
-   .huawei-gallery {
+
+  .huawei-gallery {
     left: 32rem;
   }
 
   .features-container {
-    border: #fff;
+    border: var(--white);
     margin-bottom: 6rem;
     line-height: 32px;
     border-radius: 0.4rem;
     background-color: var(--white);
     padding-bottom: 6rem;
-    width: 80%;
   }
+
   .features-title {
     display: flex;
     padding-bottom: 2rem;
     justify-content: flex-start;
-    margin-top:-20rem;
+    margin-top: -20rem;
   }
-  .features-title > img {
+
+  .features-title>img {
     height: 3rem;
   }
 
@@ -151,79 +174,156 @@
     background-color: var(--light-grey);
     border-radius: 1rem;
   }
+
   .green-vertical {
     border-radius: 1rem;
     margin-top: 2rem;
-    margin-right:2rem;
+    margin-right: 2rem;
     height: 4rem;
-    border:var(--green) solid 10px;
+    border: var(--green) solid 10px;
   }
-  .feature > img {
+
+  .feature>img {
     margin-top: 1rem;
     width: 40%;
   }
 
-  .blue-horizontal{
-    margin-top:2.2rem;
-    border-top:0.45rem blue solid;
+  .blue-horizontal {
+    margin-top: 2.2rem;
+    border-top: 0.45rem blue solid;
     width: 25%;
   }
-  
-  .features-container > .features-container-spec{
-    margin-top:-10rem;
+
+  .features-container>.features-container-spec {
+    margin-top: -10rem;
   }
 
 
-/* Second Container */
+  /* Second Container */
   .second-feature-container {
     margin-bottom: 6rem;
-    width: 80%;
     line-height: 36px;
     border-radius: 0.4rem;
     background-color: var(--white);
   }
 
-  .features-second-row {
-    margin:2rem;
-    width: 80%;
-  } 
-  .features-second-row > img {
-    margin-top: 1rem;
-    width: 40%;
+  .features-row {
+    margin: 2rem;
   }
 
-  .features-second-row > h4 {
+  .features-row>img {
+    margin-top: 1rem;
+  }
+
+  .features-second-row>h4 {
     margin-top: 3rem;
   }
-  .features-second-row > p {
+
+  .features-second-row>p {
     margin-top: 1.2rem;
   }
 
 
-/* workflow Container */
+  /* workflow Container */
   .workflow-title {
-    display:flex;
-    margin-left:9rem;
+    display: flex;
     margin-bottom: 4rem;
-  } 
-   
+  }
+
   .workflow-image {
     margin-bottom: 4rem;
   }
-  
-  .workflow-image > img {
-    width: 80%;
+
+  .workflow-image>img {
+    width: 90%;
     padding-left: 6rem;
   }
-  
-  .workflow-green-vertical{
-    border-radius:4px;
-    margin-right:16px;
-    border:8px var(--green) solid;
+
+  .workflow-green-vertical {
+    border-radius: 4px;
+    margin-right: 16px;
+    border: 8px var(--green) solid;
     height: 48px;
     margin-top: 1rem;
   }
 
-  .border-green-vertical{
+  .border-green-vertical {
     border-left: 6px #53b453 solid;
+  }
+
+
+  /* ---- APPLICATION START ----*/
+  .application-background {
+    margin-top: 12rem;
+    width: 100%;
+    height: 57rem;
+    background-color: var(--light-grey);
+  }
+
+  .application-title-container {
+    display: flex;
+    margin-left: 18rem;
+  }
+
+  .application-mt{
+    margin-top: -6rem;
+  }
+
+  .application-title{
+    margin-top: -6.6rem;
+  }
+
+  .application-customers {
+    margin-left: 10px;
+  }
+
+  .application-container {
+    padding-top: 2rem;
+  }
+  .application-container > .row > .col > h4 {
+    color: var(--orange);
+    font-weight: 800;
+    margin-top: 1rem;
+  }
+  .application-image > img {
+    height: 75%;
+  }
+  .application-content {
+    margin-right: 110px;
+  }
+  .application-mobile {
+    background-color: var(--white);
+    border-radius: 8px;
+    display: flex;
+    height: 6rem;
+  }
+  .application-mobile > img {
+    margin: 0.5rem;
+    height: 75%;
+  }
+
+  .application-mobile > h4 {
+    padding-left: 4rem;
+    padding-top: 2rem;
+    font-weight: 800;
+  }
+  
+  .application-desktop {
+    display: flex;
+    height: 6rem;
+  }
+  
+  .application-desktop > img {
+    margin: 0.5rem;
+    height: 75%;
+  }
+  .application-desktop > h4 {
+    padding-left: 4rem;
+    padding-top: 2rem;
+    font-weight: 800;
+  }
+  .left-blue-vertical{
+    border-left: 6px var(--blue) solid;
+    height: 70px;
+    margin-top: 14px;
   }
